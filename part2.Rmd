@@ -1,0 +1,20 @@
+---
+title: "The Hobbit text analysis"
+author: "AJ Zekanoski"
+date: "2/22/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(tidytext)
+library(textdata)
+library(pdftools)
+library(ggwordcloud)
+```
+
+```{r}
+hobbit_text <- pdf_text("the-hobbit.pdf")
+```
+
